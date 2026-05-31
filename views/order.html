@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Now - Sweet Delights</title>
+
+    <link rel="stylesheet" href="/css/order.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+
+<div class="top-header">
+
+    <div class="top-left">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            123 Sweet Street, Cake City
+        </span>
+
+        <span>
+            <i class="fa-solid fa-phone"></i>
+            077 123 4567
+        </span>
+
+    </div>
+
+    <div class="top-right">
+
+        <span>Follow us:</span>
+
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+
+    </div>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        <img src="/images/logo/logo.png">
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/cakes">Cakes</a></li>
+        <li><a href="/custom-cakes">Custom Cakes</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search cakes...">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <!-- CART -->
+
+        <div class="cart-icon">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+        </div>
+
+        <!-- ORDER BUTTON -->
+
+        <a href="/order" class="order-btn">
+            Order Now
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- SEARCH RESULTS -->
+
+<div class="search-results" id="searchResults"></div>
+
+<!-- BANNER -->
+
+<section class="order-banner">
+
+    <img src="/images/banner/banner2.png">
+
+</section>
+
+<!-- MAIN -->
+
+<section class="order-page">
+
+    <!-- LEFT -->
+
+    <div class="delivery-section">
+
+        <div class="steps">
+
+            <div class="step active" id="step1">
+                <div class="circle">1</div>
+                <p>Delivery</p>
+            </div>
+
+            <div class="step" id="step2">
+                <div class="circle">2</div>
+                <p>Payment</p>
+            </div>
+
+            <div class="step" id="step3">
+                <div class="circle">3</div>
+                <p>Review</p>
+            </div>
+
+            <div class="step" id="step4">
+                <div class="circle">4</div>
+                <p>Confirmed</p>
+            </div>
+
+        </div>
+
+        <!-- DELIVERY FORM -->
+
+        <div id="deliveryPage">
+
+            <h2>Delivery Details</h2>
+
+            <form id="deliveryForm">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Phone</label>
+                    <input type="text" id="phone" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Delivery Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Address</label>
+                    <textarea id="address"></textarea>
+                </div>
+
+            </form>
+
+            <button class="payment-btn" onclick="goToPayment()">
+                Proceed To Payment
+            </button>
+
+        </div>
+
+        <!-- PAYMENT -->
+
+      <!-- PAYMENT -->
+
+<div id="paymentPage" class="hidden">
+
+    <h2>Select Payment Method</h2>
+
+    <div class="payment-options">
+
+        <button onclick="showCardPayment()">
+            <i class="fa-brands fa-cc-visa"></i>
+            Card Payment
+        </button>
+
+        <button onclick="cashOnDelivery()">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Cash On Delivery
+        </button>
+
+    </div>
+
+    <!-- CARD FORM -->
+
+    <div id="cardPaymentBox" class="card-payment hidden">
+
+        <div class="card-icons">
+
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+
+        </div>
+
+        <div class="input-group">
+            <label>Card Holder Name</label>
+            <input type="text" id="cardName">
+        </div>
+
+        <div class="input-group">
+            <label>Card Number</label>
+            <input
+            type="text"
+            id="cardNumber"
+            placeholder="1234 5678 9012 3456">
+        </div>
+
+        <div class="card-row">
+
+            <div class="input-group">
+                <label>Expiry Date</label>
+                <input
+                type="text"
+                id="expiry"
+                placeholder="MM/YY">
+            </div>
+
+            <div class="input-group">
+                <label>CVV</label>
+                <input
+                type="password"
+                id="cvv"
+                placeholder="123">
+            </div>
+
+        </div>
+
+        <button class="payment-btn" onclick="payNow()">
+
+            Pay
+            <span id="payAmount"></span>
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- REVIEW -->
+
+<div id="reviewPage" class="hidden">
+
+    <h2>Review Your Order</h2>
+
+    <div class="review-box">
+
+        <div id="reviewItems"></div>
+
+        <div class="review-details">
+
+            <p>
+                <strong>Payment Method:</strong>
+                <span id="paymentMethod"></span>
+            </p>
+
+            <p>
+                <strong>Total Amount:</strong>
+                <span id="reviewTotal"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <button class="payment-btn" onclick="confirmOrder()">
+        Confirm Order
+    </button>
+
+</div>
+
+<!-- CONFIRMED -->
+
+<div id="confirmedPage" class="hidden">
+
+    <div class="confirmed-box">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h2>Order Confirmed!</h2>
+
+        <p id="confirmMessage"></p>
+
+    </div>
+
+</div>  
+
+    <!-- RIGHT -->
+
+    <div class="order-summary">
+
+        <div class="summary-top">
+
+            <h2>Your Cart</h2>
+
+            <button onclick="window.location='/cakes'">
+                Edit Cart
+            </button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="totals">
+
+            <div class="total-row">
+                <span>Subtotal</span>
+                <span id="subtotal">Rs. 0</span>
+            </div>
+
+            <div class="total-row">
+                <span>Delivery</span>
+                <span>Rs. 300</span>
+            </div>
+
+            <div class="grand-total">
+                <span>Total</span>
+                <h2 id="grandTotal">Rs. 0</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="/js/order.js"></script>
+
+</body>
+</html>

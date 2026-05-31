@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="/css/admin.css">
+
+</head>
+<body>
+
+<div class="admin-container">
+
+    <h1>Add New Cake</h1>
+
+    <form id="cakeForm" enctype="multipart/form-data">
+
+        <input type="text" name="name" placeholder="Cake Name" required>
+
+        <input type="number" name="price" placeholder="Price" required>
+
+        <input type="text" name="category" placeholder="Category">
+
+        <textarea name="description" placeholder="Description"></textarea>
+
+        <input type="file" name="image" required>
+
+        <button type="submit">
+            Add Cake
+        </button>
+
+    </form>
+
+</div>
+
+<script src="/js/admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Cakes - Sweet Delights</title>
+
+    <link rel="stylesheet" href="/css/custom-cakes.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+
+<div class="top-header">
+
+    <div class="top-left">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            123 Sweet Street, Cake City
+        </span>
+
+        <span>
+            <i class="fa-solid fa-phone"></i>
+            077 123 4567
+        </span>
+
+    </div>
+
+    <div class="top-right">
+
+        <span>Follow us:</span>
+
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+
+    </div>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        <img src="/images/logo/logo.png">
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cakes">Cakes</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/custom-cakes" class="active">Custom Cakes</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+        <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount">0</span>
+        </div>
+
+        <a href="/order" class="order-btn">
+            Order Now
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- BANNER -->
+
+<section class="custom-banner">
+
+    <img src="/images/banner/banner3.png">
+
+</section>
+
+<!-- MAIN SECTION -->
+
+<section class="custom-section">
+
+    <!-- LEFT -->
+
+    <div class="custom-left">
+
+        <!-- STEPS -->
+
+        <div class="steps">
+
+            <div class="step active" id="step1">
+                <span>1</span>
+                <p>Cake Flavour</p>
+            </div>
+
+            <div class="step" id="step2">
+                <span>2</span>
+                <p>Size & Shape</p>
+            </div>
+
+            <div class="step" id="step3">
+                <span>3</span>
+                <p>Design & Theme</p>
+            </div>
+
+            <div class="step" id="step4">
+                <span>4</span>
+                <p>Add Extras</p>
+            </div>
+
+            <div class="step" id="step5">
+                <span>5</span>
+                <p>Review & Order</p>
+            </div>
+
+        </div>
+
+        <!-- STEP CONTENT -->
+
+        <div id="stepContent">
+
+            <!-- STEP 1 -->
+
+            <div class="step-page active-page" id="stepPage1">
+
+                <div class="section-title">
+
+                    <h2>1. Choose Cake Flavour</h2>
+
+                    <p>Select the flavour of your cake</p>
+
+                </div>
+
+                <div class="flavour-grid">
+
+                    <div class="flavour-card active"
+                    onclick="selectFlavour(this,'Chocolate','/images/cakes/chocolate truffle cake.png',4500)">
+
+                        <img src="/images/cakes/chocolate truffle cake.png">
+
+                        <h3>Chocolate</h3>
+
+                    </div>
+
+                    <div class="flavour-card"
+                    onclick="selectFlavour(this,'Vanilla','/images/cakes/vanilla cake.png',4000)">
+
+                        <img src="/images/cakes/vanilla cake.png">
+
+                        <h3>Vanilla</h3>
+
+                    </div>
+
+                    <div class="flavour-card"
+                    onclick="selectFlavour(this,'Red Velvet','/images/cakes/Red Velvet Cake.png',5500)">
+
+                        <img src="/images/cakes/Red Velvet Cake.png">
+
+                        <h3>Red Velvet</h3>
+
+                    </div>
+
+                    <div class="flavour-card"
+                    onclick="selectFlavour(this,'Strawberry','/images/cakes/strawberry cake.png',4800)">
+
+                        <img src="/images/cakes/strawberry cake.png">
+
+                        <h3>Strawberry</h3>
+
+                    </div>
+
+                    <div class="flavour-card"
+                    onclick="selectFlavour(this,'Butterscotch','/images/cakes/butterscotch cake.png',5000)">
+
+                        <img src="/images/cakes/butterscotch cake.png">
+
+                        <h3>Butterscotch</h3>
+
+                    </div>
+
+                    <div class="flavour-card"
+                    onclick="selectFlavour(this,'Black Forest','/images/cakes/black forest cake.png',5200)">
+
+                        <img src="/images/cakes/black forest cake.png">
+
+                        <h3>Black Forest</h3>
+
+                    </div>
+
+                    <div class="flavour-card"
+                    onclick="selectFlavour(this,'Blueberry','/images/cakes/blueberry cheese cake.png',5800)">
+
+                        <img src="/images/cakes/blueberry cheese cake.png">
+
+                        <h3>Blueberry</h3>
+
+                    </div>
+
+                    <div class="flavour-card other-card"
+                    onclick="openChat()">
+
+                        <i class="fa-solid fa-cake-candles"></i>
+
+                        <h3>Other</h3>
+
+                        <p>Tell us your flavour</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 2 -->
+
+            <div class="step-page hidden" id="stepPage2">
+
+                <div class="section-title">
+
+                    <h2>2. Select Size & Shape</h2>
+
+                </div>
+
+                <h3 class="mini-title">Choose Size</h3>
+
+                <div class="options-grid">
+
+                    <div class="option-card" onclick="selectSize(this,'1 KG',1000)">
+                        1 KG
+                    </div>
+
+                    <div class="option-card" onclick="selectSize(this,'2 KG',2000)">
+                        2 KG
+                    </div>
+
+                    <div class="option-card" onclick="selectSize(this,'3 KG',3000)">
+                        3 KG
+                    </div>
+
+                </div>
+
+                <h3 class="mini-title">Choose Shape</h3>
+
+                <div class="options-grid">
+
+                    <div class="option-card" onclick="selectShape(this,'Round')">
+                        Round
+                    </div>
+
+                    <div class="option-card" onclick="selectShape(this,'Heart')">
+                        Heart
+                    </div>
+
+                    <div class="option-card" onclick="selectShape(this,'Square')">
+                        Square
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 3 -->
+
+            <div class="step-page hidden" id="stepPage3">
+
+                <div class="section-title">
+
+                    <h2>3. Choose Theme</h2>
+
+                </div>
+
+                <div class="options-grid">
+
+                    <div class="option-card" onclick="selectTheme(this,'Birthday')">
+                        Birthday
+                    </div>
+
+                    <div class="option-card" onclick="selectTheme(this,'Wedding')">
+                        Wedding
+                    </div>
+
+                    <div class="option-card" onclick="selectTheme(this,'Kids')">
+                        Kids
+                    </div>
+
+                    <div class="option-card" onclick="selectTheme(this,'Luxury')">
+                        Luxury
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 4 -->
+
+            <div class="step-page hidden" id="stepPage4">
+
+                <div class="section-title">
+
+                    <h2>4. Add Extras</h2>
+
+                </div>
+
+                <div class="extras-list">
+
+                    <label>
+                        <input
+                        type="checkbox"
+                        onchange="toggleExtra('Candles',500)">
+                        Candles (+Rs.500)
+                    </label>
+
+                    <label>
+                        <input
+                        type="checkbox"
+                        onchange="toggleExtra('Flowers',700)">
+                        Flowers (+Rs.700)
+                    </label>
+
+                    <label>
+                        <input
+                        type="checkbox"
+                        onchange="toggleExtra('Chocolate Topper',900)">
+                        Chocolate Topper (+Rs.900)
+                    </label>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Special Request Note</label>
+
+                    <textarea
+                    id="requestNote"
+                    placeholder="Write your custom request..."></textarea>
+
+                </div>
+
+            </div>
+
+            <!-- STEP 5 -->
+
+            <div class="step-page hidden" id="stepPage5">
+
+                <div class="section-title">
+
+                    <h2>5. Review & Order</h2>
+
+                </div>
+
+                <div class="review-box">
+
+                    <div id="reviewContent"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION -->
+
+        <div class="bottom-box">
+
+            <p>
+                <i class="fa-regular fa-lightbulb"></i>
+                Need help? Chat with our cake designer.
+            </p>
+
+            <div class="step-buttons">
+
+                <button onclick="prevStep()">
+                    Previous
+                </button>
+
+                <button onclick="nextStep()">
+                    Next Step
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="preview-box">
+
+        <h2>Your Cake Preview</h2>
+
+        <img
+        id="previewImage"
+        src="/images/cakes/chocolate truffle cake.png">
+
+        <div class="summary">
+
+            <h3>Order Summary</h3>
+
+            <div class="summary-row">
+                <span>Flavour</span>
+                <span id="summaryFlavour">Chocolate</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Size</span>
+                <span id="summarySize">Not selected</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Shape</span>
+                <span id="summaryShape">Not selected</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Theme</span>
+                <span id="summaryTheme">Not selected</span>
+            </div>
+
+            <div class="summary-row">
+                <span>Extras</span>
+                <span id="summaryExtras">None</span>
+            </div>
+
+        </div>
+
+        <div class="price-box">
+
+            <h3>Estimated Price</h3>
+
+            <h1 id="totalPrice">Rs. 4500</h1>
+
+        </div>
+
+        <button class="cart-btn" onclick="addCustomCakeToCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+        </button>
+
+        <button class="quote-btn" onclick="openChat()">
+            <i class="fa-regular fa-message"></i>
+            Request a Quote
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="feature">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+            <h4>Fresh Ingredients</h4>
+            <p>We use only the best</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-ban"></i>
+        <div>
+            <h4>Eggless Options</h4>
+            <p>100% eggless available</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-truck"></i>
+        <div>
+            <h4>Delivery on Time</h4>
+            <p>Right on your special day</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <i class="fa-solid fa-award"></i>
+        <div>
+            <h4>100% Satisfaction</h4>
+            <p>We make it perfect</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- HELP SECTION -->
+
+<section class="help-box">
+
+    <div class="help-left">
+
+        <img src="/images/cakes/cupcake.png">
+
+        <div>
+            <h2>Need Help Designing Your Cake?</h2>
+            <p>Our cake experts are here to help you create the perfect cake!</p>
+        </div>
+
+    </div>
+
+    <div class="help-buttons">
+
+        <button
+        class="call-btn"
+        onclick="window.location.href='tel:0771234567'">
+
+            <i class="fa-solid fa-phone"></i>
+            Call 077 123 4567
+
+        </button>
+
+        <button class="chat-btn" onclick="openChat()">
+
+            <i class="fa-regular fa-message"></i>
+            Chat with Us
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- LIVE CHAT -->
+
+<div class="chat-popup hidden" id="chatPopup">
+
+    <div class="chat-header">
+
+        <h3>Sweet Delights Support</h3>
+
+        <button onclick="closeChat()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div class="chat-body" id="chatBody">
+
+        <div class="message support">
+            Hello 👋<br>
+            How can we help you design your dream cake?
+        </div>
+
+    </div>
+
+    <div class="chat-footer">
+
+        <input
+        type="text"
+        id="chatInput"
+        placeholder="Type message...">
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/js/cart.js"></script>
+<script src="/js/custom-cakes.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+body{
+    font-family: Poppins;
+    background:#fff5f8;
+}
+
+.admin-container{
+    width:500px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+button{
+    background:#ff4f93;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}

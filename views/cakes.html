@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cakes - Sweet Delights</title>
+
+    <link rel="stylesheet" href="/css/cakes.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+
+<div class="top-header">
+
+    <div class="top-left">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            123 Sweet Street, Cake City
+        </span>
+
+        <span>
+            <i class="fa-solid fa-phone"></i>
+            077 123 4567
+        </span>
+
+    </div>
+
+    <div class="top-right">
+
+        <span>Follow us:</span>
+
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+
+    </div>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        <img src="/images/logo/logo.png">
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+
+        <li>
+            <a href="/cakes" class="active">
+                Cakes
+            </a>
+        </li>
+
+        <li><a href="/about">About Us</a></li>
+
+        <li><a href="/custom-cakes">
+            Custom Cakes
+        </a></li>
+
+        <li><a href="/contact">Contact</a></li>
+
+    </ul>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="nav-right">
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search cakes...">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <!-- CART -->
+
+        <div class="cart-icon">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+        </div>
+
+        <!-- ORDER BUTTON -->
+
+        <a href="/order" class="order-btn">
+            Order Now
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- BANNER -->
+
+<section class="cake-banner">
+
+    <img src="/images/banner/banner2.png">
+
+</section>
+
+<!-- MAIN SECTION -->
+
+<section class="cakes-page">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h3>Search</h3>
+
+        <div class="search-box">
+
+            <input
+            type="text"
+            id="sidebarSearch"
+            placeholder="Search cakes...">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <!-- CATEGORIES -->
+
+        <div class="sidebar-section">
+
+            <h3>Categories</h3>
+
+            <ul>
+
+                <li>All Cakes <span>12</span></li>
+
+                <li>Chocolate <span>4</span></li>
+
+                <li>Fruit Cakes <span>3</span></li>
+
+                <li>Cheesecake <span>2</span></li>
+
+                <li>Cup Cakes <span>1</span></li>
+
+            </ul>
+
+        </div>
+
+        <!-- OCCASION -->
+
+        <div class="sidebar-section">
+
+            <h3>Occasion</h3>
+
+            <div class="check">
+                <input type="checkbox"> Birthday
+            </div>
+
+            <div class="check">
+                <input type="checkbox"> Wedding
+            </div>
+
+            <div class="check">
+                <input type="checkbox"> Anniversary
+            </div>
+
+            <div class="check">
+                <input type="checkbox"> Party
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CAKES SECTION -->
+
+    <div class="cakes-container">
+
+        <div class="cakes-top">
+
+            <p>Freshly baked premium cakes</p>
+
+            <button>
+                Sort By Popular
+            </button>
+
+        </div>
+
+        <!-- DYNAMIC CAKES GRID -->
+
+        <div class="cakes-grid" id="cakesGrid">
+
+            <!-- DATABASE CAKES LOAD HERE -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- JAVASCRIPT -->
+
+<script src="/js/cart.js"></script>
+<script src="/js/cakes.js"></script>
+
+</body>
+</html>
