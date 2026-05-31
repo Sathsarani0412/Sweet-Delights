@@ -3,6 +3,7 @@
 ## Overview
 
 Sweet Delights Cake Shop Website is a responsive web application designed to help customers browse cakes, customize cake orders, and place orders online. The system provides an easy-to-use interface for customers while storing order and inquiry information using an SQLite database.
+
 <img width="300" height="150" alt="1" src="https://github.com/user-attachments/assets/490b8b73-ce2a-454c-b726-69389342e5a2" />
 <img width="300" height="150" alt="2" src="https://github.com/user-attachments/assets/ac53744a-a7be-4ac4-88e8-9f1aca888d54" />
 <img width="300" height="150" alt="3" src="https://github.com/user-attachments/assets/2064f951-b18f-4148-9c91-76127d2b5392" />
