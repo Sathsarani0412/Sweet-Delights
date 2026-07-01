@@ -1,6 +1,4 @@
-// ===============================
-// LOAD FEATURED CAKES
-// ===============================
+
 
 async function loadFeaturedCakes(){
 
@@ -59,9 +57,7 @@ async function loadFeaturedCakes(){
 loadFeaturedCakes();
 
 
-// ===============================
-// HOME SEARCH
-// ===============================
+
 
 const homeSearch = document.getElementById('homeSearch');
 
