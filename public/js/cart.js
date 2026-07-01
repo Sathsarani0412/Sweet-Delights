@@ -1,6 +1,4 @@
-// ===============================
-// GET CART
-// ===============================
+
 
 function getCart(){
 
@@ -8,9 +6,7 @@ function getCart(){
 
 }
 
-// ===============================
-// SAVE CART
-// ===============================
+
 
 function saveCart(cart){
 
@@ -20,9 +16,7 @@ function saveCart(cart){
 
 }
 
-// ===============================
-// ADD TO CART
-// ===============================
+
 
 function addToCart(name, price, image){
 
@@ -51,9 +45,6 @@ function addToCart(name, price, image){
 
 }
 
-// ===============================
-// UPDATE CART COUNT
-// ===============================
 
 function updateCartCount(){
 
