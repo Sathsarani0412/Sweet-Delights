@@ -9,9 +9,7 @@ const DELIVERY_CHARGE = 300;
 
 let selectedPayment = "";
 
-// ===========================
-// LOAD CART
-// ===========================
+
 
 function loadCart() {
 
@@ -104,9 +102,6 @@ function loadCart() {
     }
 }
 
-// ===========================
-// SAVE CART
-// ===========================
 
 function saveCart(){
 
@@ -118,9 +113,7 @@ function saveCart(){
     loadCart();
 }
 
-// ===========================
-// QUANTITY
-// ===========================
+
 
 function increaseQty(index){
 
@@ -151,9 +144,7 @@ function removeItem(index){
     saveCart();
 }
 
-// ===========================
-// STEP 1
-// ===========================
+
 
 function goToPayment(){
 
@@ -185,9 +176,7 @@ function goToPayment(){
         .classList.add("active");
 }
 
-// ===========================
-// CARD PAYMENT
-// ===========================
+
 
 function showCardPayment(){
 
@@ -221,9 +210,6 @@ function payNow(){
     showReview();
 }
 
-// ===========================
-// CASH ON DELIVERY
-// ===========================
 
 function cashOnDelivery(){
 
@@ -236,9 +222,7 @@ function cashOnDelivery(){
     showReview();
 }
 
-// ===========================
-// REVIEW
-// ===========================
+
 
 function showReview(){
 
@@ -289,9 +273,7 @@ function showReview(){
 
 }
 
-// ===========================
-// CONFIRM ORDER
-// ===========================
+
 
 async function confirmOrder(){
 
@@ -371,9 +353,6 @@ async function confirmOrder(){
     }
 }
 
-// ===========================
-// SEARCH
-// ===========================
 
 async function loadCakes(){
 
@@ -454,8 +433,6 @@ if(searchInput){
 
 }
 
-// ===========================
-// INITIAL LOAD
-// ===========================
+
 
 loadCart();
