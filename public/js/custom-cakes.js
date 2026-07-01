@@ -12,13 +12,13 @@ let customCake = {
     basePrice: 4500
 };
 
-// UPDATE PRICE
+
 
 function updatePrice(){
 
     let total = customCake.basePrice;
 
-    // SIZE PRICE
+ 
 
     if(customCake.size === "1 KG"){
         total += 1000;
@@ -32,7 +32,7 @@ function updatePrice(){
         total += 3000;
     }
 
-    // EXTRAS PRICE
+  
 
     customCake.extras.forEach(extra => {
         total += extra.price;
@@ -44,7 +44,7 @@ function updatePrice(){
     return total;
 }
 
-// NEXT STEP
+
 
 function nextStep(){
 
@@ -82,7 +82,7 @@ function nextStep(){
     }
 }
 
-// PREVIOUS STEP
+
 
 function prevStep(){
 
@@ -116,7 +116,7 @@ function prevStep(){
     }
 }
 
-// FLAVOUR
+
 
 function selectFlavour(card,name,image,price){
 
@@ -139,7 +139,7 @@ function selectFlavour(card,name,image,price){
     updateSummary();
 }
 
-// SIZE
+
 
 function selectSize(card,size){
 
@@ -156,7 +156,7 @@ function selectSize(card,size){
     updateSummary();
 }
 
-// SHAPE
+
 
 function selectShape(card,shape){
 
@@ -175,7 +175,7 @@ function selectShape(card,shape){
     updateSummary();
 }
 
-// THEME
+
 
 function selectTheme(card,theme){
 
@@ -192,7 +192,7 @@ function selectTheme(card,theme){
     updateSummary();
 }
 
-// EXTRAS
+
 
 function toggleExtra(name,price){
 
@@ -219,7 +219,7 @@ function toggleExtra(name,price){
     updateSummary();
 }
 
-// UPDATE SUMMARY
+
 
 function updateSummary(){
 
@@ -248,7 +248,7 @@ function updateSummary(){
     updatePrice();
 }
 
-// REVIEW
+
 
 function loadReview(){
 
@@ -301,7 +301,7 @@ function loadReview(){
     `;
 }
 
-// ADD TO CART
+
 
 function addCustomCakeToCart(){
 
