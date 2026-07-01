@@ -9,7 +9,7 @@ async function loadCakes(){
 }
 
 
-// DISPLAY CAKES
+
 
 function displayCakes(cakes){
 
@@ -60,14 +60,12 @@ function displayCakes(cakes){
 }
 
 
-// LOAD ALL CAKES
+
 
 loadCakes();
 
 
-// ============================
-// NAVBAR SEARCH
-// ============================
+
 
 const searchInput = document.getElementById('searchInput');
 
@@ -88,9 +86,6 @@ if(searchInput){
 }
 
 
-// ============================
-// SIDEBAR SEARCH
-// ============================
 
 const sidebarSearch = document.getElementById('sidebarSearch');
 
