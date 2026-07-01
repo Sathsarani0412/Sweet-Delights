@@ -10,7 +10,7 @@ body{
     color:#222;
 }
 
-/* TOP HEADER */
+
 
 .top-header{
     background:#ffe6ee;
@@ -34,7 +34,7 @@ body{
     color:#ff4f93;
 }
 
-/* NAVBAR */
+
 
 nav{
     padding:22px 60px;
@@ -79,7 +79,7 @@ nav ul li a:hover{
     cursor:pointer;
 }
 
-/* CART */
+
 
 .cart-icon{
     position:relative;
@@ -105,7 +105,7 @@ nav ul li a:hover{
     font-size:11px;
 }
 
-/* ORDER BUTTON */
+
 
 .order-btn{
     background:#ff4f93;
@@ -124,7 +124,7 @@ nav ul li a:hover{
     background:#ff2f7d;
 }
 
-/* BANNER */
+
 
 .contact-banner{
     width:calc(100% - 120px);
@@ -170,7 +170,7 @@ nav ul li a:hover{
     object-fit:cover;
 }
 
-/* CONTACT SECTION */
+
 
 .contact-section{
     width:calc(100% - 120px);
@@ -279,7 +279,6 @@ nav ul li a:hover{
     background:#ff2f7d;
 }
 
-/* MAP */
 
 .map-section{
     width:calc(100% - 120px);
@@ -295,7 +294,7 @@ nav ul li a:hover{
     border-radius:25px;
 }
 
-/* FOOTER */
+
 
 footer{
     background:#fff5f8;
