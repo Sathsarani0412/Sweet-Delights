@@ -10,7 +10,7 @@ body{
     color:#222;
 }
 
-/* TOP HEADER */
+
 
 .top-header{
     width:100%;
@@ -40,7 +40,7 @@ body{
     cursor:pointer;
 }
 
-/* NAVBAR */
+
 
 nav{
     width:100%;
@@ -109,7 +109,6 @@ nav ul li a.active{
     font-size:11px;
 }
 
-/* ORDER BUTTON */
 
 .order-btn{
     background:#ff4f93;
@@ -130,7 +129,7 @@ nav ul li a.active{
     background:#ff2f7d;
 }
 
-/* BANNER */
+
 
 .about-banner{
     width:calc(100% - 120px);
@@ -187,7 +186,7 @@ nav ul li a.active{
     display:block;
 }
 
-/* ABOUT SECTION */
+
 
 .about-section{
     width:calc(100% - 120px);
@@ -259,7 +258,6 @@ nav ul li a.active{
     font-size:20px;
 }
 
-/* STATS */
 
 .stats-section{
     width:calc(100% - 120px);
@@ -283,7 +281,7 @@ nav ul li a.active{
     margin-bottom:10px;
 }
 
-/* SERVICES */
+
 
 .services-section{
     width:calc(100% - 120px);
@@ -341,7 +339,7 @@ nav ul li a.active{
     margin-bottom:15px;
 }
 
-/* FOOTER */
+
 
 footer{
     background:#fff5f8;
