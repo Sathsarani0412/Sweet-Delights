@@ -6,9 +6,7 @@ const path = require('path');
 
 const app = express();
 
-// =========================
-// MIDDLEWARE
-// =========================
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,9 +15,7 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-// =========================
-// DATABASE
-// =========================
+
 
 const db = new sqlite3.Database('./database/cake_shop.db', (err) => {
 
@@ -31,13 +27,10 @@ const db = new sqlite3.Database('./database/cake_shop.db', (err) => {
 
 });
 
-// =========================
-// CREATE TABLES
-// =========================
 
 db.serialize(() => {
 
-    // CAKES TABLE
+  
 
     db.run(`
         CREATE TABLE IF NOT EXISTS cakes (
@@ -53,7 +46,7 @@ db.serialize(() => {
         )
     `);
 
-    // ORDERS TABLE
+ 
 
     db.run(`
         CREATE TABLE IF NOT EXISTS orders (
@@ -72,9 +65,7 @@ db.serialize(() => {
 
 });
 
-// =========================
-// HTML ROUTES
-// =========================
+
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
@@ -104,9 +95,7 @@ app.get('/admin', (req, res) => {
     res.sendFile(__dirname + '/views/admin.html');
 });
 
-// =========================
-// IMAGE UPLOAD
-// =========================
+
 
 const storage = multer.diskStorage({
 
@@ -126,9 +115,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// =========================
-// ADD CAKE
-// =========================
+
 
 app.post('/add-cake', upload.single('image'), (req, res) => {
 
@@ -165,9 +152,7 @@ app.post('/add-cake', upload.single('image'), (req, res) => {
 
 });
 
-// =========================
-// GET ALL CAKES
-// =========================
+
 
 app.get('/get-cakes', (req, res) => {
 
@@ -192,9 +177,7 @@ app.get('/get-cakes', (req, res) => {
 
 });
 
-// =========================
-// API CAKES
-// =========================
+
 
 app.get('/api/cakes', (req, res) => {
 
@@ -216,9 +199,7 @@ app.get('/api/cakes', (req, res) => {
 
 });
 
-// =========================
-// SEARCH CAKES
-// =========================
+
 
 app.get('/search-cakes', (req, res) => {
 
@@ -246,9 +227,7 @@ app.get('/search-cakes', (req, res) => {
 
 });
 
-// =========================
-// SAVE ORDER
-// =========================
+
 
 app.post('/api/orders', (req, res) => {
 
@@ -298,9 +277,7 @@ app.post('/api/orders', (req, res) => {
 
 });
 
-// =========================
-// GET ALL ORDERS
-// =========================
+
 
 app.get('/get-orders', (req, res) => {
 
@@ -325,19 +302,17 @@ app.get('/get-orders', (req, res) => {
 
 });
 
-// =========================
-// START SERVER
-// =========================
+
 
 const PORT = 3000;
 
 app.listen(PORT, () => {
 
     console.log(`
-    ===================================
+    
     Sweet Delights Server Running
     http://localhost:${PORT}
-    ===================================
+ 
     `);
 
 });
