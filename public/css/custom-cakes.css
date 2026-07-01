@@ -10,7 +10,7 @@ body{
     color:#222;
 }
 
-/* TOP HEADER */
+
 
 .top-header{
     background:#ffe6ee;
@@ -32,7 +32,7 @@ body{
     color:#ff4f93;
 }
 
-/* NAVBAR */
+
 
 nav{
     display:flex;
@@ -119,7 +119,7 @@ nav ul a.active{
     background:#ff2f7d;
 }
 
-/* BANNER */
+
 
 .custom-banner{
     padding:0 60px;
@@ -130,7 +130,7 @@ nav ul a.active{
     border-radius:25px;
 }
 
-/* MAIN */
+
 
 .custom-section{
     padding:30px 60px;
@@ -140,7 +140,6 @@ nav ul a.active{
     gap:25px;
 }
 
-/* LEFT */
 
 .custom-left{
     border:1px solid #eee;
@@ -148,7 +147,7 @@ nav ul a.active{
     padding:35px;
 }
 
-/* STEPS */
+
 
 .steps{
     display:flex;
@@ -183,7 +182,7 @@ nav ul a.active{
     color:white;
 }
 
-/* TITLE */
+
 
 .section-title h2{
     font-size:34px;
@@ -195,7 +194,7 @@ nav ul a.active{
     margin-bottom:30px;
 }
 
-/* GRID */
+
 
 .flavour-grid{
     display:grid;
@@ -257,7 +256,7 @@ nav ul a.active{
     color:#777;
 }
 
-/* BOTTOM */
+
 
 .bottom-box{
     margin-top:30px;
@@ -289,7 +288,6 @@ nav ul a.active{
     cursor:pointer;
 }
 
-/* RIGHT */
 
 .preview-box{
     border:1px solid #eee;
@@ -361,7 +359,7 @@ nav ul a.active{
     border:2px solid #ff4f93;
 }
 
-/* FEATURES */
+
 
 .features{
     margin:0 60px 30px;
@@ -387,7 +385,7 @@ nav ul a.active{
     color:#ff4f93;
 }
 
-/* HELP */
+
 
 .help-box{
     margin:0 60px 40px;
@@ -449,7 +447,7 @@ nav ul a.active{
     display:block;
 }
 
-/* OPTIONS */
+
 
 .options-grid{
     display:grid;
@@ -473,7 +471,7 @@ nav ul a.active{
     color:#ff4f93;
 }
 
-/* EXTRAS */
+
 
 .extras-list{
     display:flex;
@@ -488,7 +486,7 @@ nav ul a.active{
     border-radius:10px;
 }
 
-/* REVIEW */
+
 
 .review-box{
     background:#fff5f8;
@@ -496,7 +494,7 @@ nav ul a.active{
     border-radius:15px;
 }
 
-/* CHAT */
+
 
 .chat-popup{
     position:fixed;
