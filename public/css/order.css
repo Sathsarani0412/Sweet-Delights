@@ -10,7 +10,7 @@ body{
     color:#222;
 }
 
-/* TOP HEADER */
+
 
 .top-header{
     background:#ffe6ef;
@@ -33,7 +33,7 @@ body{
     margin-right:6px;
 }
 
-/* NAVBAR */
+
 
 nav{
     padding:20px 60px;
@@ -110,7 +110,7 @@ nav ul a:hover{
     text-decoration:none;
     color:white;
 }
-/* BANNER */
+
 
 .order-banner{
     margin:20px 60px;
@@ -145,7 +145,7 @@ nav ul a:hover{
     font-weight:600;
 }
 
-/* MAIN */
+
 
 .order-page{
     padding:20px 60px 60px;
@@ -154,7 +154,7 @@ nav ul a:hover{
     gap:30px;
 }
 
-/* LEFT */
+
 
 .delivery-section{
     background:white;
@@ -269,7 +269,7 @@ nav ul a:hover{
     cursor:pointer;
 }
 
-/* RIGHT */
+
 
 .order-summary{
     background:white;
@@ -366,7 +366,7 @@ nav ul a:hover{
     font-weight:600;
 }
 
-/* FOOTER */
+
 
 footer{
     margin:0 60px 60px;
@@ -464,7 +464,7 @@ footer{
 .full-width{
     grid-column:1/3;
 }
-/* PAYMENT */
+
 
 .card-payment{
     margin-top:30px;
